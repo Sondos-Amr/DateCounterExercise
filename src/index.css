@@ -1,0 +1,52 @@
+* {
+  margin: unset;
+  padding: unset;
+  font-size: 19px;
+}
+:root {
+  --mainColor: gray;
+  --secondColor: #fff;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: black;
+  width: 400px;
+  height: 500px;
+}
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+}
+button {
+  background: var(--mainColor);
+  color: var(--secondColor);
+  border: 1px solid var(--mainColor);
+  padding: 9px 21px;
+}
+button:hover {
+  background: var(--secondColor);
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
+input {
+  padding: 9px 21px;
+  border: 1px solid var(--mainColor);
+}
+.stepContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+.stepContainer span,
+p span {
+  color: var(--secondColor);
+}
